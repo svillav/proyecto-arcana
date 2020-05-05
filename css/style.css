@@ -1,0 +1,30 @@
+#encabezado {
+    background-color: #FFF;
+    height: 9em;
+    width: 100%;
+}
+
+nav {
+    background-color: #111;
+    height: 5em;
+    width: auto;
+}
+
+section {
+    height: 28em;
+}
+
+h2 {
+    background-color: ghostwhite;
+    height: 23em;
+}
+
+#prefooter {
+    background-color: #2ca9f2;
+    height: 12em;
+}
+
+.pie {
+    background-color: #fcfcfc;
+    height: 28em;
+}
