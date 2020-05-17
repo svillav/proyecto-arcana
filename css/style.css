@@ -1,9 +1,9 @@
-/*------ Encabezado ------*/
+/*----------------------------- Encabezado -------------------------------*/
 header {
     position: static;
     height: 12em;
     width: 100%;
-    background-image: radial-gradient(rgb(255, 255, 255), rgb(224, 224, 224));
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(233, 227, 227));
     text-align: center;
     clear: both;
 }
@@ -26,8 +26,33 @@ header {
         color: #37c0fb;
     }
 
+/*------------------------------ Encabezado: media screen -----------------------------*/
+    @media screen and (max-width: 105em) {
+        
+        header {
+            position: static;
+            height: 8em;
+        }
+        
+        header a {
+            font-size: 33px;
+            top: 1.5em;
+        }
+    }
 
-/*-------------- Barra de Navegación ---------------*/
+    @media screen and (max-width: 88em) {
+        header {
+            position: static;
+            height: 7em;            
+        }
+
+        header a {
+            font-size: 28px;
+        }
+    }
+
+
+/*--------------------------- Barra de Navegación --------------------------*/
 #barra {
     position: static;
     height: 7em;
@@ -37,10 +62,16 @@ header {
 
     #barra nav {
         position: relative;
+        flex-direction: row;
         height: 6em;
-        width: 70em;
+        width: 73em;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #barrainf {
+        height: 1.2em;
+        background-color: #37c0fb;
     }
 
         #home {
@@ -57,6 +88,7 @@ header {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: lighter;
             font-size: 24px;
+            letter-spacing: 1px;
             text-align: center;
             text-decoration: none;
         }
@@ -65,14 +97,13 @@ header {
             color: honeydew;
         }
 
-    #barrainf {
-        height: 1.2em;
-        background-color: #37c0fb;
-    }
+        #home:hover {
+            color: #d4d4d4;
+        }
 
     #home::before {
         content: " ";
-        display: flexbox;
+        display: flex;
         position: absolute;
         margin-left: 16%;
         top: 2.4em;
@@ -82,3 +113,153 @@ header {
         border-style: solid;
         border-color: transparent transparent #37c0fb;
     }
+
+/*------------------------------ Barra de Nav: media screen -----------------------------*/
+    @media screen and (max-width: 105em) {
+        #barra {
+            height: 6em;
+        }
+        
+        #barra nav {
+            position: relative;
+            width: 63em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .enlace {
+            font-size: 20px;
+        }
+
+        #barrainf {
+            height: 0.9em;
+        }
+    }
+
+    @media screen and (max-width: 88em) {
+        #barra {
+            height: 5em;
+        }
+
+        #barra nav {
+            position: relative;
+            top: -0.3em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #home::before {
+            margin-left: 12%;
+            top: 1.8em;
+        }
+    }
+
+/*----------------------------- Main ----------------------------------*/
+main {
+    position: static;
+    height: 36em;
+    background-image: url("../img/banner.jpg");
+    background-size: 115vw;
+}    
+
+    #opacity {
+        position: relative;
+        flex-direction: row;
+        text-align: center;
+        top: 28em;
+        display: flexbox;
+        height: 8em;
+        background-image: linear-gradient(to bottom right, rgb(26, 25, 25), rgb(15, 15, 15));
+        opacity: 0.7;
+    }
+
+        #opacitytext p {
+            position: relative;
+            margin-top: 12.8em;
+            margin-left: 23%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.8em;
+            color: rgb(219, 219, 219);
+            font-weight: 300;
+            float: left;
+        }
+
+        #html5 {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        #html5:hover {
+            color: #37c0fb;
+        }
+
+        #learnmore {        
+            position: relative;
+            padding: 0.8em 2.3em;
+            left: 2%;
+            top: 16.7em;
+            background-image: linear-gradient(to bottom, #37c0fb, #1980ac);
+            border-style: solid #37c0fb;
+            border-radius: 8px;
+            border-style: none;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.4em;
+            font-weight: 600;            
+            text-decoration: none;            
+        }
+
+/*------------------------------- Main: media screen ---------------------------------*/
+    @media screen and (max-width: 105em) {
+        main {
+            position: static;
+            height: 30em;
+        }
+            
+        #opacity {
+            position: relative;
+            top: 22em;
+        }
+            
+        #opacitytext p {
+            position: relative;
+            flex-direction: row;
+            margin-top: 10em;
+            margin-left: 20%;
+            font-size: 1.7em;
+        }
+
+        #learnmore {
+            position: relative;
+            top: 12.4em;
+        }
+    }
+
+    @media screen and (max-width: 88em) {
+        main {
+            background-size: auto;
+            height: 28em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #opacity {
+            position: relative;
+            top: 20em;
+        }
+
+        #opacitytext p {
+            position: relative;
+            margin-top: 8.8em;
+            margin-left: 14%;
+        }
+
+        #learnmore {
+            position: relative;
+            top: 11em;
+            left: 1%;
+            padding: 0.7em 2.1em;
+        }
+    }    
+
+
