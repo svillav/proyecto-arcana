@@ -8,7 +8,7 @@ header {
     clear: both;
 }
 
-    header a {
+    #textheader {
         position: relative;
         top: 2em;
         text-decoration: none;
@@ -19,39 +19,110 @@ header {
     }
 
     #b {
-        font-weight: 600;
+        font-weight: 700;
     }
 
-    header a:hover {
+    #textheader:hover {
         color: #37c0fb;
     }
 
+    #iconheader {
+        display: none;
+    }
+
 /*------------------------------ Encabezado: media screen -----------------------------*/
-    @media screen and (max-width: 105em) {
-        
+    @media screen and (max-width: 1600px) {
         header {
             position: static;
             height: 8em;
         }
         
-        header a {
+        #textheader {
             font-size: 33px;
             top: 1.5em;
         }
     }
 
-    @media screen and (max-width: 88em) {
+    @media screen and (max-width: 1300px) {
         header {
             position: static;
             height: 7em;            
         }
 
-        header a {
+        #textheader {
             font-size: 28px;
         }
     }
 
+    @media screen and (max-width: 1052px) {
+        header {
+            background-image: linear-gradient(#303030, #1d1d1d);
+            height: 3.5em;
+        }
 
+        #textheader {
+            color:  rgb(233, 227, 227);
+            top: 0.7em;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        #textheader:hover {
+            color: rgb(233, 227, 227);
+        }
+
+        #iconheader {
+            position: relative;
+            display: block;
+            width: 1em;
+            color: rgb(172, 171, 171);
+            font-size: 1.8em;
+            top: -0.3em;
+            left: 1em;
+        }
+    }
+
+    @media screen and (max-width: 876px) {
+        #header {
+            height: 3.3em;
+        }
+        
+        #textheader {
+            font-size: 18px;
+            top: 0.9em;
+        }
+
+        #iconheader {
+            font-size: 1.5em;
+            top: -0.2em;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        header {
+            height: 3em;
+        }
+
+        #textheader {
+            font-size: 16px;
+        }
+
+        #iconheader {
+            font-size: 1.2em;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        header {
+            height: 2.8em;
+        }
+
+        #textheader {
+            font-size: 14px;
+        }
+    }
+
+    
 /*--------------------------- Barra de Navegación --------------------------*/
 #barra {
     position: static;
@@ -115,7 +186,7 @@ header {
     }
 
 /*------------------------------ Barra de Nav: media screen -----------------------------*/
-    @media screen and (max-width: 105em) {
+    @media screen and (max-width: 1600px) {
         #barra {
             height: 6em;
         }
@@ -136,7 +207,7 @@ header {
         }
     }
 
-    @media screen and (max-width: 88em) {
+    @media screen and (max-width: 1300px) {
         #barra {
             height: 5em;
         }
@@ -154,12 +225,23 @@ header {
         }
     }
 
+    @media screen and (max-width: 1052px) {
+        #barra {
+            display: none;
+        }
+
+        #barrainf {
+            height: 0.3em;
+        }
+    }
+
+
 /*----------------------------- Main ----------------------------------*/
 main {
     position: static;
     height: 36em;
     background-image: url("../img/banner.jpg");
-    background-size: 115vw;
+    background-size: 125vw;
 }    
 
     #opacity {
@@ -179,14 +261,14 @@ main {
             margin-left: 23%;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 1.8em;
-            color: rgb(219, 219, 219);
+            color: rgb(218, 216, 216);
             font-weight: 300;
             float: left;
         }
 
         #html5 {
             text-decoration: none;
-            color: rgb(255, 255, 255);
+            color: rgb(235, 235, 235);
         }
 
         #html5:hover {
@@ -196,7 +278,7 @@ main {
         #learnmore {        
             position: relative;
             padding: 0.8em 2.3em;
-            left: 2%;
+            left: 1em;
             top: 16.7em;
             background-image: linear-gradient(to bottom, #37c0fb, #1980ac);
             border-style: solid #37c0fb;
@@ -210,7 +292,7 @@ main {
         }
 
 /*------------------------------- Main: media screen ---------------------------------*/
-    @media screen and (max-width: 105em) {
+    @media screen and (max-width: 1600px) {
         main {
             position: static;
             height: 30em;
@@ -223,7 +305,6 @@ main {
             
         #opacitytext p {
             position: relative;
-            flex-direction: row;
             margin-top: 10em;
             margin-left: 20%;
             font-size: 1.7em;
@@ -235,9 +316,10 @@ main {
         }
     }
 
-    @media screen and (max-width: 88em) {
+    @media screen and (max-width: 1300px) {
         main {
             background-size: auto;
+            background-position: center center;
             height: 28em;
             margin-left: auto;
             margin-right: auto;
@@ -261,5 +343,65 @@ main {
             padding: 0.7em 2.1em;
         }
     }    
+ 
+   @media screen and (max-width: 1052px) {
+        #opacity {
+            position: relative;
+            top: 15.5em;
+            height: 12.5em;
+        }
+
+        #opacitytext p {
+            position: relative;
+            margin: center center;
+            top: -5.5em;
+        }
+
+        #learnmore {
+            position: absolute;
+            margin-left: 39%;
+            top: 18.5em;
+        }
+    }
+
+    @media screen and (max-width: 876px) {
+        main {
+            height: 21em;
+            text-align: center;
+        }
+
+        #opacity {
+            display: flex;
+            height: 10em;
+            top: 11em;
+        }
+
+        #opacitytext p {
+            position: relative;
+            top: -6.5em;
+            left: auto;
+            font-size: 23px;
+        }
+
+        #learnmore {
+            top: 320px;
+            margin: center;
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        #opacitytext p {
+            left: auto;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        #learnmore {
+            position: static;
+            margin-top: -1%;
+        }
+    }
 
 
+        
