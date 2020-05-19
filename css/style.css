@@ -434,7 +434,6 @@ main {
             padding: 1em;
             height: 30em;
             text-align: center;
-            border: 1px solid red;
         }
 
         /* Títulos */
@@ -461,7 +460,6 @@ main {
         /* Iconos */
         .icon {
             position: absolute;
-            border: 10px solid red;
             padding: 35px;
             margin-top: 70px;
             margin-left: -60px;
@@ -491,6 +489,7 @@ main {
                 column-count: none;
             }
             
+            /*------------- Icon 1 ------------*/
                 #icon1 {
                     position: absolute;
                     padding: 0;
@@ -500,85 +499,232 @@ main {
                     margin-left: -750px;
                 }
 
-                .icon {
+                #telegram {
                     position: absolute;
                     font-size: 48px;
                     padding: 32px;
                     margin-left: -450px;
-                    margin-top: 45px;
+                    margin-top: 35px;
                 }
 
-                section div h1 {
+                section #icon1 h1 {
                     margin-top: 50px;
                     left: -200px;
                 }
 
-                section div p {
+                section #icon1 p {
                     text-align: justify;
                     width: 700px;
                     margin-left: 144px;
                 }
 
-                
-
-                #icon2, #icon3 {
-                    display: none;
+                /*------------------- Icon 2 ---------------------*/
+                #icon2 {
+                    position: absolute;
+                    height: 170px;
+                    width: 860px;
+                    margin-top: 200px;
+                    margin-left: -750px;
                 }
+
+                #pencil {
+                    position: absolute;
+                    font-size: 48px;
+                    padding: 32px;
+                    margin-left: -450px;
+                    margin-top: 20px;
+                }
+
+                section #icon2 h1 {
+                    margin-top: 35px;
+                    left: -210px;
+                }
+
+                section #icon2 p {
+                    text-align: justify;
+                    width: 700px;
+                    margin-left: 130px;
+                }
+
+                /*------------ Icon 3 ------------*/
+                #icon3 {
+                    position: absolute;
+                    height: 170px;
+                    width: 860px;
+                    margin-top: 405px;
+                    margin-left: -750px;
+                }
+
+                #wrench {
+                    position: absolute;
+                    font-size: 48px;
+                    padding: 32px;
+                    margin-left: -450px;
+                    margin-top: 20px;
+                }
+
+                section #icon3 h1 {
+                    margin-top: 28px;
+                    left: -185px;
+                }
+
+                section #icon3 p {
+                    text-align: justify;
+                    width: 700px;
+                    margin-left: 125px;
+                }                
         }
 
         @media screen and (max-width: 876px) {
+        
+        /*------------ Icon 1 -----------*/    
             #icon1 {
                 width: 780px;
                 margin-left: -640px;
             }
 
-            .icon {
-                margin-left: -400px;
+            #telegram {
+                margin-left: -390px;
                 margin-top: 35px;
             }
 
-            section div h1 {
+            section #icon1 h1 {
                 left: -150px;
             }
 
-            section div p {
+            section #icon1 p {
                 margin-left: 140px;
                 width: 600px;
                 font-size: 20px;
             }
+
+        /*--------------- Icon 2 ----------------*/
+            #icon2 {
+                width: 750px;
+                margin-left: -640px;
+            }
+            
+            #pencil {
+                margin-left: -390px;
+            }
+
+            section #icon2 h1 {
+                left: -155px;
+            }
+
+            section #icon2 p {
+                width: 600px;
+                font-size: 20px;
+            }
+
+        /*---------------- Icon 3 ---------------*/
+            #icon3 {
+                width: 750px;
+                margin-left: -640px;
+            }
+            
+            #wrench {
+                margin-left: -390px;
+            }
+
+            section #icon3 h1 {
+                left: -130px;
+            }
+
+            section #icon3 p {
+                width: 600px;
+                font-size: 20px;
+            }   
         }
 
         @media screen and (max-width: 750px) {
-            section div p {
-                width: 550px;
+            section #icon1 p, section #icon2 p, section #icon3 p {
+                width: 530px;
                 line-height: 24px;
             }
         }
-
+                
         @media screen and (max-width: 700px) {
+        /*--------------- Icon 1 ---------------*/    
             #icon1 {
                 height: 150px;
-                width: 660px;
+                width: 650px;
                 margin-left: -570px;
             }
 
-            .icon {
-                margin-left: -330px;
+            #telegram {
+                margin-left: -320px;
                 margin-top: 25px;
                 padding: 20px;
                 font-size: 45px;
             }
 
-            section div h1 {
+            section #icon1 h1 {
                 font-size: 20px;
                 margin-top: 30px;
                 margin-left: 15px;
             }
 
-            section div p {
+            section #icon1 p {
                 font-size: 18px;
                 margin-top: 10px;
                 margin-left: 110px;
+                width: 500px;
+            }
+
+        /*----------------- Icon 2 ---------------*/    
+            #icon2 {
+                height: 130px;
+                width: 610px;
+                margin-left: -568px;
+                margin-top: 150px;
+            }
+
+            #pencil {
+                margin-left: -317px;
+                margin-top: 15px;
+                padding: 20px;
+                font-size: 45px;
+            }
+
+            section #icon2 h1 {
+                font-size: 20px;
+                margin-top: 20px;
+                margin-left: 28px;
+            }
+
+            section #icon2 p {
+                font-size: 18px;
+                margin-top: 10px;
+                margin-left: 95px;
+                width: 500px;
+            }
+
+        /*----------------- Icon 3 ------------------*/    
+            #icon3 {
+                height: 130px;
+                width: 610px;
+                margin-left: -568px;
+                margin-top: 312px;
+            }
+
+            #wrench {
+                margin-left: -317px;
+                margin-top: 15px;
+                padding: 20px;
+                font-size: 45px;
+            }
+
+            section #icon3 h1 {
+                font-size: 20px;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+
+            section #icon3 p {
+                font-size: 18px;
+                margin-top: 10px;
+                margin-left: 95px;
                 width: 500px;
             }
         }
