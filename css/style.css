@@ -426,7 +426,7 @@ main {
    
    
 /*--------------------------- Section / Icons -----------------------*/
-    section {
+    #section1 {
         display: flex;
         column-count: 3;
         height: 550px;
@@ -441,7 +441,7 @@ main {
         }
 
         /* Títulos */
-        section div h2 {
+        #section1 div h2 {
             position: relative;
             margin-top: 250px;
             font-size: 27px;
@@ -451,7 +451,7 @@ main {
         }
 
         /* Textos */
-        section div p {
+        #section1 div p {
             margin-top: 1em;
             font-size: 23px;
             font-weight: lighter;
@@ -486,7 +486,7 @@ main {
         }
 
         @media screen and (max-width: 1052px) {
-            section {
+            #section1 {
                 display: flex;
                 height: 630px;
                 column-count: none;
@@ -510,12 +510,12 @@ main {
                     margin-top: 35px;
                 }
 
-                section #icon1 h2 {
+                #section1 #icon1 h2 {
                     margin-top: 50px;
                     left: -180px;
                 }
 
-                section #icon1 p {
+                #section1 #icon1 p {
                     text-align: justify;
                     width: 700px;
                     margin-left: 144px;
@@ -538,12 +538,12 @@ main {
                     margin-top: 20px;
                 }
 
-                section #icon2 h2 {
+                #section1 #icon2 h2 {
                     margin-top: 35px;
                     left: -190px;
                 }
 
-                section #icon2 p {
+                #section1 #icon2 p {
                     text-align: justify;
                     width: 700px;
                     margin-left: 130px;
@@ -566,12 +566,12 @@ main {
                     margin-top: 20px;
                 }
 
-                section #icon3 h2 {
+                #section1 #icon3 h2 {
                     margin-top: 28px;
                     left: -165px;
                 }
 
-                section #icon3 p {
+                #section1 #icon3 p {
                     text-align: justify;
                     width: 700px;
                     margin-left: 125px;
@@ -579,7 +579,7 @@ main {
         }
 
         @media screen and (max-width: 876px) {
-            section {
+            #section1 {
                 height: 620px;
             }
         
@@ -594,11 +594,11 @@ main {
                 margin-top: 35px;
             }
 
-            section #icon1 h2 {
+            #section1 #icon1 h2 {
                 left: -115px;
             }
 
-            section #icon1 p {
+            #section1 #icon1 p {
                 margin-left: 100px;
                 width: 550px;
                 font-size: 19px;
@@ -614,11 +614,11 @@ main {
                 margin-left: -360px;
             }
 
-            section #icon2 h2 {
+            #section1 #icon2 h2 {
                 left: -115px;
             }
 
-            section #icon2 p {
+            #section1 #icon2 p {
                 margin-left: 95px;
                 width: 550px;
                 font-size: 19px;
@@ -634,11 +634,11 @@ main {
                 margin-left: -360px;
             }
 
-            section #icon3 h2 {
+            #section1 #icon3 h2 {
                 left: -92px;
             }
 
-            section #icon3 p {
+            #section1 #icon3 p {
                 margin-left: 90px;
                 width: 550px;
                 font-size: 19px;
@@ -646,14 +646,14 @@ main {
         }
 
         @media screen and (max-width: 750px) {
-            section #icon1 p, section #icon2 p, section #icon3 p {
+            #section1 #icon1 p, #section1 #icon2 p, #section1 #icon3 p {
                 width: 500px;
                 line-height: 24px;
             }
         }
                 
         @media screen and (max-width: 700px) {
-            section {
+            #section1 {
                 height: 490px;
             }
         /*--------------- Icon 1 ---------------*/    
@@ -670,13 +670,13 @@ main {
                 font-size: 45px;
             }
 
-            section #icon1 h2 {
+            #section1 #icon1 h2 {
                 font-size: 20px;
                 margin-top: 30px;
                 margin-left: -20px;
             }
 
-            section #icon1 p {
+            #section1 #icon1 p {
                 font-size: 18px;
                 margin-top: 10px;
                 margin-left: 120px;
@@ -698,13 +698,13 @@ main {
                 font-size: 45px;
             }
 
-            section #icon2 h2 {
+            #section1 #icon2 h2 {
                 font-size: 20px;
                 margin-top: 20px;
                 margin-left: -30px;
             }
 
-            section #icon2 p {
+            #section1 #icon2 p {
                 font-size: 18px;
                 margin-top: 10px;
                 margin-left: 105px;
@@ -726,13 +726,13 @@ main {
                 font-size: 45px;
             }
 
-            section #icon3 h2 {
+            #section1 #icon3 h2 {
                 font-size: 20px;
                 margin-top: 20px;
                 margin-left: -30px;
             }
 
-            section #icon3 p {
+            #section1 #icon3 p {
                 font-size: 18px;
                 margin-top: 10px;
                 margin-left: 110px;
@@ -1266,4 +1266,23 @@ main {
     
         }
 
+/*---------------------------- Footer ---------------------------------*/
+footer {
+    height: 1500px;
+    background-color: rgb(177, 177, 96);
+}
 
+    #footermain {
+        column-count: 2;
+        border: 1px solid rgb(0, 17, 255);
+    }
+
+        #footerlinks {
+            column-count: 2;
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        form {
+            border: 1px solid red;
+        }
