@@ -1268,21 +1268,402 @@ main {
 
 /*---------------------------- Footer ---------------------------------*/
 footer {
-    height: 1500px;
+    position: static;
+    height: 1100px;
     background-color: rgb(177, 177, 96);
 }
 
     #footermain {
-        column-count: 2;
         border: 1px solid rgb(0, 17, 255);
+        height: 700px;
     }
 
         #footerlinks {
-            column-count: 2;
             border: 1px solid red;
+            height: 650px;
+            width: 50%;
+        }
+
+            footer h2 {
+                color: rgb(36, 36, 36);
+                font-size: 27px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 600;
+            }
+
+            #footerlinks > section {
+                border: 1px solid rgb(17, 0, 255);
+                padding: 0;
+                margin: 100px 50px 100px 10%;
+                width: 250px;
+                float: left;
+                color: rgb(49, 49, 49);
+            }
+
+                #footerlinks li {
+                    font-size: 23px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 300;
+                    line-height: 60px;
+                }
+
+                #footerlinks ul {
+                    margin-top: 45px;
+                }
+
+                    #footerlinks a {
+                        color: #464646;
+                        text-decoration: underline;
+                    }
+
+                        #footerlinks a:hover {
+                            color: #37c0fb;
+                        }
+
+
+        #form {
+            border: 1px solid rgb(253, 0, 253);
+            position: relative;
+            height: 700px;
+            width: 40%;
+            margin-top: -650px;
+            margin-left: 50%;
+        }
+    
+            #form h2 {
+                border: 1px solid red;
+                position: relative;
+                width: 160px;
+                margin-top: 100px;
+                margin-left: 25px;
+            }
+
+            #fieldsettop {
+                border: 1px solid red;
+                width: 780px;
+            }
+
+                .fieldsettop {
+                    margin-top: 40px;
+                    margin-left: 25px;
+                    height: 60px;
+                    width: 347px;
+                    padding-left: 10px;
+                    border-radius: 9px;
+                    text-decoration: none;
+                    font-size: 23px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+
+                #form textarea {
+                    height: 215px;
+                    width: 740px;
+                    margin-top: 30px;
+                    margin-left: 25px;
+                    padding-top: 20px;
+                    padding-left: 10px;
+                    border-radius: 9px;
+                    text-decoration: none;
+                    font-size: 23px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+
+                #sendmessage {
+                    position: absolute;
+                    background-image: linear-gradient(#333333, #2c2c2c);
+                    padding: 20px 40px;
+                    margin-top: 30px;
+                    margin-left: 25px;
+                    color: rgb(214, 214, 214);
+                    font-size: 22px;
+                    font-weight: 600;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    text-decoration: none;
+                    border-radius: 8px;
+                }
+    
+    
+    
+    #footerbottom {
+        text-align: center;
+        display: none;
+    }    
+    
+    
+
+    /*--------------------------- Footer: media screen ----------------------------*/    
+    @media screen and (max-width: 1600px) {
+        footer {
+            background-color: rgb(127, 86, 167);
+        }
+
+            #footermain {
+                height: 650px;
+            }
+
+                #footerlinks h2 {
+                    font-size: 24px;
+                }
+
+                #footerlinks > section {
+                    border: 1px solid rgb(17, 0, 255);
+                    padding: 0;
+                    margin: 90px 10px 90px 8%;
+                    width: 250px;
+                }
+
+                    #footerlinks li {
+                        font-size: 21px;
+                        line-height: 60px;
+                    }
+
+                    #footerlinks ul {
+                        margin-top: 30px;
+                    }
+
+            #form {
+                height: 650px;
+                margin-top: -650px;
+            }        
+
+                    #form h2 {
+                        position: relative;
+                        width: 160px;
+                        margin-top: 90px;
+                        margin-left: 25px;
+                        font-size: 24px;
+                    }
+                    
+                    #fieldsettop {
+                        border: 1px solid red;
+                        width: 47vw;
+                    }
+        
+                        .fieldsettop {
+                            margin-top: 30px;
+                            margin-left: 25px;
+                            height: 50px;
+                            width: 20vw;
+                            font-size: 23px;                            
+                        }
+        
+                        #form textarea {
+                            height: 200px;
+                            width: 43vw;
+                            margin-top: 30px;
+                            margin-left: 25px;
+                            padding-top: 20px;
+                            padding-left: 10px;                            
+                            font-size: 23px;                            
+                        }
+        
+                        #sendmessage {
+                            position: absolute;                            
+                            padding: 20px 40px;
+                            margin-top: 30px;
+                            margin-left: 25px;                            
+                            font-size: 22px;                                                    
+                        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        footer {
+            background-color: rgb(113, 185, 119);
+        }
+
+            #footermain {
+                height: 600px;
+            }
+
+            footer #footerlinks {
+                border: 1px solid wheat;
+                height: 600px;
+            }
+
+                #footerlinks h2 {
+                    font-size: 21px;
+                }
+
+                footer #section2a {
+                    position: relative;
+                    border: 1px solid rgb(17, 0, 255);
+                    padding: 0;
+                    margin: 70px 2% 70px 10%;
+                    width: 200px;
+                }
+                
+                footer #section2b {
+                    position: relative;
+                    border: 1px solid rgb(17, 0, 255);
+                    padding: 0;
+                    margin: 70px 5% 70px 2%;
+                    width: 200px;
+                }
+
+                    #footerlinks li {
+                        font-size: 19px;
+                        line-height: 58px;
+                    }
+
+                    #footerlinks ul {
+                        margin-top: 27px;
+                    }
+            
+            #form {
+                height: 550px;
+                margin-top: -620px;
+            }        
+                    #form h2 {
+                        width: 150px;
+                        margin-top: 90px;
+                        margin-left: 25px;
+                        font-size: 21px;
+                    }
+                    
+                    #fieldsettop {
+                        border: 1px solid red;
+                        width: 48vw;
+                    }
+        
+                        .fieldsettop {
+                            margin-top: 30px;
+                            margin-left: 25px;
+                            height: 50px;
+                            width: 20vw;
+                            font-size: 23px;                            
+                        }
+        
+                        #form textarea {
+                            height: 200px;
+                            width: 44vw;
+                            margin-top: 30px;
+                            margin-left: 25px;
+                            padding-top: 20px;
+                            padding-left: 10px;                            
+                            font-size: 23px;                            
+                        }
+        
+                        #sendmessage {
+                            position: absolute;                            
+                            padding: 20px 40px;
+                            margin-top: 30px;
+                            margin-left: 25px;                            
+                            font-size: 22px;                                                    
+                        }                                
+    }
+
+    @media screen and (max-width: 1052px) {
+    footer {
+        background-color: rgb(177, 75, 106);
+        height: 2000px;
+    }
+
+    #footermain {
+        height: 1500px;
+    }
+        #footerlinks {
+            width: 100%;
+            column-count: 2;
             text-align: center;
         }
 
-        form {
-            border: 1px solid red;
+        #footerlinks h2 {
+            font-size: 25px;
         }
+
+            #footerlinks #section2a {
+                position: relative;
+                border: 1px solid rgb(17, 0, 255);
+                padding: 0;
+                margin: 70px 20px 70px 50px;
+                width: 380px;
+            }
+
+            #footerlinks #section2b {
+                position: relative;
+                border: 1px solid rgb(17, 0, 255);
+                padding: 0;
+                margin: 70px 50px 70px 20px;
+                width: 380px;
+            }
+
+            #footerlinks li {
+                font-size: 23px;
+                line-height: 58px;
+            }
+
+            #footerlinks ul {
+                margin-top: 27px;
+            }
+
+
+
+
+
+
+
+
+
+        #form, #footerbottom {
+            display: none;
+        }
+
+    }
+    
+    @media screen and (max-width: 876px) {
+        footer {
+            background-color: rgb(86, 88, 179);
+            height: 2000px;
+        }
+    
+        #footermain {
+            height: 1500px;
+        }
+            #footerlinks {
+                width: 100%;
+                column-count: 2;
+                text-align: center;
+            }
+    
+            #footerlinks h2 {
+                font-size: 23px;
+            }
+    
+                #footerlinks #section2a {
+                    position: relative;
+                    border: 1px solid rgb(17, 0, 255);
+                    padding: 0;
+                    margin: 70px 20px 70px 50px;
+                    width: 280px;
+                }
+    
+                #footerlinks #section2b {
+                    position: relative;
+                    border: 1px solid rgb(17, 0, 255);
+                    padding: 0;
+                    margin: 70px 50px 70px 20px;
+                    width: 280px;
+                }
+    
+                #footerlinks li {
+                    font-size: 20px;
+                    line-height: 58px;
+                }
+    
+                #footerlinks ul {
+                    margin-top: 24px;
+                }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            #form, #footerbottom {
+                display: none;
+            }
+    
+    }    
