@@ -1381,20 +1381,75 @@ footer {
                     text-decoration: none;
                     border-radius: 8px;
                 }
+
+                #sendmessage:hover {
+                    background-image: linear-gradient(#505050, #4b4b4b);
+                }
     
     
     
-    #footerbottom {
+    #bottomcontent {
         text-align: center;
-        display: none;
-    }    
+        border: 1px solid red;
+    }
     
+        #bottomcontent #bottomicon {
+            border: 1px solid blue;
+            height: 80px;
+            width: 600px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            #bottomcontent .iconbottom {
+                position: relative;
+                border: 1px solid red;
+                margin-top: 100px;
+                font-size: 50px;
+                color: rgb(129, 129, 129);
+                padding: 30px;
+            }
+
+            #bottomcontent .iconbottom:hover {
+                color: rgb(51, 51, 51);
+            }
+        
+        #footerbottom #bottomtext {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid greenyellow;
+            width: 800px;
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+            #bottomtext p {
+                padding: 0 15px;
+                color: rgb(90, 90, 90);
+            }
+
+            #bottomtext p > a {
+                color: rgb(90, 90, 90);
+                text-decoration: underline;
+            }
+
+            #bottomtext p > a:hover {
+                color: #37c0fb;
+            }
+
+
+        
+
+
     
 
     /*--------------------------- Footer: media screen ----------------------------*/    
     @media screen and (max-width: 1600px) {
         footer {
-            background-color: rgb(127, 86, 167);
+            background-color: rgb(174, 142, 206);
+            height: 900px;
         }
 
             #footermain {
@@ -1406,7 +1461,7 @@ footer {
                 }
 
                 #footerlinks > section {
-                    border: 1px solid rgb(17, 0, 255);
+                    border: 1px solid rgb(0, 0, 0);
                     padding: 0;
                     margin: 90px 10px 90px 8%;
                     width: 250px;
@@ -1464,11 +1519,33 @@ footer {
                             margin-left: 25px;                            
                             font-size: 22px;                                                    
                         }
+                        
+            #bottomcontent {
+                text-align: center;
+                border: 1px solid red;
+            }
+                        
+                #bottomcontent #bottomicon {
+                    border: 1px solid rgb(255, 255, 255);
+                    width: 900px;
+                    height: 100px;                    
+                }
+                    
+                #bottomcontent .iconbottom {
+                    font-size: 40px;
+                    color: rgb(100, 100, 100);
+                    padding: 30px 30px;
+                    margin-top: 200px;
+                }
+                            
+                      
+
     }
 
     @media screen and (max-width: 1300px) {
         footer {
             background-color: rgb(113, 185, 119);
+            height: 850px;
         }
 
             #footermain {
@@ -1549,19 +1626,32 @@ footer {
                             margin-top: 30px;
                             margin-left: 25px;                            
                             font-size: 22px;                                                    
-                        }                                
+                        }
+                
+                #bottomcontent .iconbottom {
+                    font-size: 38px;
+                    color: rgb(100, 100, 100);
+                    padding: 30px 30px;
+                    margin-top: 200px;
+                }
+                
+            #footerbottom #bottomtext {
+                width: 700px;
+                font-size: 18px;
+            }    
     }
 
     @media screen and (max-width: 1052px) {
     footer {
         background-color: rgb(177, 75, 106);
-        height: 2000px;
+        height: 1280px;
     }
 
     #footermain {
         height: 1500px;
     }
-        #footerlinks {
+        footer #footerlinks {
+            height: 600px;
             width: 100%;
             column-count: 2;
             text-align: center;
@@ -1581,7 +1671,7 @@ footer {
 
             #footerlinks #section2b {
                 position: relative;
-                border: 1px solid rgb(17, 0, 255);
+                border: 1px solid rgb(0, 4, 255);
                 padding: 0;
                 margin: 70px 50px 70px 20px;
                 width: 380px;
@@ -1596,30 +1686,75 @@ footer {
                 margin-top: 27px;
             }
 
+        footer #form {            
+            height: 500px;
+            width: 100%;
+        }
+        
+        #form {
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 100%;
+            text-align: center;
+        }
+            #form h2 {
+                margin-top: 0px;
+                margin-left: auto;  
+                margin-right: auto;
+                width: 180px;
+                font-size: 30px;
+            }
 
+            #form #fieldsettop {
+                width: 90vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
+            #form .fieldsettop {
+                width: 40vw;
+            }
 
+            #form textarea {
+                width: 85vw;
+            }
 
+            form #sendmessage {
+                margin-left: -10vw;
+            }
 
-
-
-
-        #form, #footerbottom {
-            display: none;
+        #footermain {
+            border: 1px solid rgb(0, 17, 255);
+            height: 1100px;
         }
 
+        #bottomcontent .iconbottom {
+            font-size: 32px;
+            padding: 20px 20px;
+        }        
+
+        #bottomcontent #bottomicon {
+            width: 500px;
+            height: 50px;                    
+        }   
+
+        #footerbottom #bottomtext {
+            width: 800px;
+            font-size: 20px;
+        }    
     }
     
     @media screen and (max-width: 876px) {
         footer {
             background-color: rgb(86, 88, 179);
-            height: 2000px;
+            height: 1180px;
         }
     
         #footermain {
-            height: 1500px;
+            height: 930px;
         }
-            #footerlinks {
+            footer #footerlinks {
+                height: 530px;
                 width: 100%;
                 column-count: 2;
                 text-align: center;
@@ -1633,7 +1768,7 @@ footer {
                     position: relative;
                     border: 1px solid rgb(17, 0, 255);
                     padding: 0;
-                    margin: 70px 20px 70px 50px;
+                    margin: 40px 20px 40px 50px;
                     width: 280px;
                 }
     
@@ -1641,7 +1776,7 @@ footer {
                     position: relative;
                     border: 1px solid rgb(17, 0, 255);
                     padding: 0;
-                    margin: 70px 50px 70px 20px;
+                    margin: 40px 50px 40px 20px;
                     width: 280px;
                 }
     
@@ -1653,17 +1788,136 @@ footer {
                 #footerlinks ul {
                     margin-top: 24px;
                 }
+
+                
+            footer #form {
+                width: 100%;
+                height: 420px;
+                text-align: center;
+            }
+                    #form h2 {
+                        margin-top: 0px;
+                        margin-left: auto;  
+                        margin-right: auto;
+                        width: 180px;
+                        font-size: 25px;
+                    }
+        
+                    #form #fieldsettop {
+                        width: 95vw;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+        
+                    #form .fieldsettop {
+                        height: 40px;
+                        width: 40vw;
+                        font-size: 18px;
+                    }
+        
+                    #form textarea {
+                        height: 150px;
+                        width: 85vw;
+                    }
+        
+                    form #sendmessage {
+                        margin-top: -15x;
+                        margin-left: -12vw;
+                        padding: 15px 30px;
+                        font-size: 20px;
+                    }    
+            
+            #footerbottom #bottomtext {
+                display: block;
+                height: 100px;
+                width: 300px;
+                font-size: 19px;
+                line-height: 30px;
+            }            
     
+    }
+
+    @media screen and (max-width: 700px) {
+        footer {
+            background-color: rgb(177, 179, 86);
+            height: 950px;
+        }
     
-    
-    
-    
-    
-    
-    
-    
-            #form, #footerbottom {
-                display: none;
+        #footermain {
+            height: 750px;
+        }
+            footer #footerlinks {
+                height: 420px;
+                width: 100%;
+                column-count: 2;
+                text-align: center;
             }
     
-    }    
+            #footerlinks h2 {
+                font-size: 21px;
+            }
+    
+                #footerlinks #section2a {
+                    position: relative;
+                    border: 1px solid rgb(17, 0, 255);
+                    padding: 0;
+                    margin: 30px 15px 30px 40px;
+                    width: 260px;
+                }
+    
+                #footerlinks #section2b {
+                    position: relative;
+                    border: 1px solid rgb(17, 0, 255);
+                    padding: 0;
+                    margin: 30px 40px 30px 15px;
+                    width: 260px;
+                }
+    
+                #footerlinks li {
+                    font-size: 19px;
+                    line-height: 45px;
+                }
+    
+                #footerlinks ul {
+                    margin-top: 18px;
+                }
+            
+            footer #form {
+                height: 350px;
+            }
+                    #form h2 {                          
+                        width: 180px;
+                        font-size: 22px;
+                    }
+            
+                        #form #fieldsettop {
+                            width: 90vw;
+                        }
+            
+                        #form .fieldsettop {
+                            height: 35px;
+                            width: 37vw;
+                            font-size: 16px;
+                        }
+            
+                        #form textarea {
+                            height: 100px;
+                            width: 80vw;
+                            font-size: 16px;
+                        }
+            
+                        form #sendmessage {
+                            font-size: 18px;
+                            margin-left: -90px;
+                        }        
+                        
+                #bottomicon .iconbottom {
+                    padding: 5px 5px;
+                }  
+                
+                #footerbottom #bottomtext {
+                    width: 400px;
+                    font-size: 18px;
+                    line-height: 25px;
+                }                
+    }     
