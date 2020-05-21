@@ -155,6 +155,7 @@ header {
 
     #barrainf {
         height: 1.2em;
+        margin-top: -18px;
         background-color: #37c0fb;
     }
 
@@ -198,6 +199,33 @@ header {
         border-color: transparent transparent #37c0fb;
     }
 
+        /*--------- Dropdown --------*/
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-image: linear-gradient(#292929, #0e0e0e);
+            border-radius: 8px;
+            box-shadow: 10px 10px 5px grey;
+        }
+
+        .dropdown-content a {
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+        }
+
+        .dropbtn:hover .dropdown-content {
+            display: block;
+        }
+
+        #submenu {
+            display: none;
+        }
 /*------------------------------ Barra de Nav: media screen -----------------------------*/
     @media screen and (max-width: 1600px) {
         #barra {
@@ -472,7 +500,7 @@ main {
             height: auto;
             width: auto;
             background-image: linear-gradient(rgb(0, 195, 255), rgb(16, 142, 180));
-            border: 9px solid #dfdfdf;
+            border: 9px solid #e9e9e9;
             border-radius: 10000000px;
         }
 
@@ -1270,16 +1298,14 @@ main {
 footer {
     position: static;
     height: 1100px;
-    background-color: rgb(177, 177, 96);
+    background-color: #e6e6e6;
 }
 
     #footermain {
-        border: 1px solid rgb(0, 17, 255);
         height: 700px;
     }
 
         #footerlinks {
-            border: 1px solid red;
             height: 650px;
             width: 50%;
         }
@@ -1292,7 +1318,6 @@ footer {
             }
 
             #footerlinks > section {
-                border: 1px solid rgb(17, 0, 255);
                 padding: 0;
                 margin: 100px 50px 100px 10%;
                 width: 250px;
@@ -1322,7 +1347,6 @@ footer {
 
 
         #form {
-            border: 1px solid rgb(253, 0, 253);
             position: relative;
             height: 700px;
             width: 40%;
@@ -1331,7 +1355,6 @@ footer {
         }
     
             #form h2 {
-                border: 1px solid red;
                 position: relative;
                 width: 160px;
                 margin-top: 100px;
@@ -1339,7 +1362,6 @@ footer {
             }
 
             #fieldsettop {
-                border: 1px solid red;
                 width: 780px;
             }
 
@@ -1374,7 +1396,7 @@ footer {
                     padding: 20px 40px;
                     margin-top: 30px;
                     margin-left: 25px;
-                    color: rgb(214, 214, 214);
+                    color: rgb(243, 243, 243);
                     font-size: 22px;
                     font-weight: 600;
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1383,18 +1405,16 @@ footer {
                 }
 
                 #sendmessage:hover {
-                    background-image: linear-gradient(#505050, #4b4b4b);
+                    background-image: linear-gradient(#7a7a7a, #6e6e6e);
                 }
     
     
     
     #bottomcontent {
         text-align: center;
-        border: 1px solid red;
     }
     
         #bottomcontent #bottomicon {
-            border: 1px solid blue;
             height: 80px;
             width: 600px;
             margin-top: 50px;
@@ -1404,22 +1424,20 @@ footer {
 
             #bottomcontent .iconbottom {
                 position: relative;
-                border: 1px solid red;
                 margin-top: 100px;
                 font-size: 50px;
-                color: rgb(129, 129, 129);
+                color: rgb(167, 167, 167);
                 padding: 30px;
             }
 
             #bottomcontent .iconbottom:hover {
-                color: rgb(51, 51, 51);
+                color: rgb(43, 43, 43);
             }
         
         #footerbottom #bottomtext {
             display: flex;
             margin-left: auto;
             margin-right: auto;
-            border: 1px solid greenyellow;
             width: 800px;
             font-size: 20px;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -1448,7 +1466,6 @@ footer {
     /*--------------------------- Footer: media screen ----------------------------*/    
     @media screen and (max-width: 1600px) {
         footer {
-            background-color: rgb(174, 142, 206);
             height: 900px;
         }
 
@@ -1461,7 +1478,6 @@ footer {
                 }
 
                 #footerlinks > section {
-                    border: 1px solid rgb(0, 0, 0);
                     padding: 0;
                     margin: 90px 10px 90px 8%;
                     width: 250px;
@@ -1490,7 +1506,6 @@ footer {
                     }
                     
                     #fieldsettop {
-                        border: 1px solid red;
                         width: 47vw;
                     }
         
@@ -1522,18 +1537,16 @@ footer {
                         
             #bottomcontent {
                 text-align: center;
-                border: 1px solid red;
             }
                         
                 #bottomcontent #bottomicon {
-                    border: 1px solid rgb(255, 255, 255);
                     width: 900px;
                     height: 100px;                    
                 }
                     
                 #bottomcontent .iconbottom {
                     font-size: 40px;
-                    color: rgb(100, 100, 100);
+                    color: rgb(126, 126, 126);
                     padding: 30px 30px;
                     margin-top: 200px;
                 }
@@ -1544,7 +1557,6 @@ footer {
 
     @media screen and (max-width: 1300px) {
         footer {
-            background-color: rgb(113, 185, 119);
             height: 850px;
         }
 
@@ -1553,7 +1565,6 @@ footer {
             }
 
             footer #footerlinks {
-                border: 1px solid wheat;
                 height: 600px;
             }
 
@@ -1563,7 +1574,6 @@ footer {
 
                 footer #section2a {
                     position: relative;
-                    border: 1px solid rgb(17, 0, 255);
                     padding: 0;
                     margin: 70px 2% 70px 10%;
                     width: 200px;
@@ -1571,7 +1581,6 @@ footer {
                 
                 footer #section2b {
                     position: relative;
-                    border: 1px solid rgb(17, 0, 255);
                     padding: 0;
                     margin: 70px 5% 70px 2%;
                     width: 200px;
@@ -1598,7 +1607,6 @@ footer {
                     }
                     
                     #fieldsettop {
-                        border: 1px solid red;
                         width: 48vw;
                     }
         
@@ -1630,7 +1638,6 @@ footer {
                 
                 #bottomcontent .iconbottom {
                     font-size: 38px;
-                    color: rgb(100, 100, 100);
                     padding: 30px 30px;
                     margin-top: 200px;
                 }
@@ -1643,7 +1650,6 @@ footer {
 
     @media screen and (max-width: 1052px) {
     footer {
-        background-color: rgb(177, 75, 106);
         height: 1280px;
     }
 
@@ -1663,7 +1669,6 @@ footer {
 
             #footerlinks #section2a {
                 position: relative;
-                border: 1px solid rgb(17, 0, 255);
                 padding: 0;
                 margin: 70px 20px 70px 50px;
                 width: 380px;
@@ -1671,7 +1676,6 @@ footer {
 
             #footerlinks #section2b {
                 position: relative;
-                border: 1px solid rgb(0, 4, 255);
                 padding: 0;
                 margin: 70px 50px 70px 20px;
                 width: 380px;
@@ -1724,7 +1728,6 @@ footer {
             }
 
         #footermain {
-            border: 1px solid rgb(0, 17, 255);
             height: 1100px;
         }
 
@@ -1739,14 +1742,13 @@ footer {
         }   
 
         #footerbottom #bottomtext {
-            width: 800px;
+            width: 750px;
             font-size: 20px;
         }    
     }
     
     @media screen and (max-width: 876px) {
         footer {
-            background-color: rgb(86, 88, 179);
             height: 1180px;
         }
     
@@ -1766,7 +1768,6 @@ footer {
     
                 #footerlinks #section2a {
                     position: relative;
-                    border: 1px solid rgb(17, 0, 255);
                     padding: 0;
                     margin: 40px 20px 40px 50px;
                     width: 280px;
@@ -1774,7 +1775,6 @@ footer {
     
                 #footerlinks #section2b {
                     position: relative;
-                    border: 1px solid rgb(17, 0, 255);
                     padding: 0;
                     margin: 40px 50px 40px 20px;
                     width: 280px;
@@ -1818,6 +1818,7 @@ footer {
                     #form textarea {
                         height: 150px;
                         width: 85vw;
+                        font-size: 18px;
                     }
         
                     form #sendmessage {
@@ -1839,7 +1840,6 @@ footer {
 
     @media screen and (max-width: 700px) {
         footer {
-            background-color: rgb(177, 179, 86);
             height: 950px;
         }
     
@@ -1859,7 +1859,7 @@ footer {
     
                 #footerlinks #section2a {
                     position: relative;
-                    border: 1px solid rgb(17, 0, 255);
+
                     padding: 0;
                     margin: 30px 15px 30px 40px;
                     width: 260px;
@@ -1867,7 +1867,6 @@ footer {
     
                 #footerlinks #section2b {
                     position: relative;
-                    border: 1px solid rgb(17, 0, 255);
                     padding: 0;
                     margin: 30px 40px 30px 15px;
                     width: 260px;
