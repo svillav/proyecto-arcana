@@ -1,3 +1,4 @@
 # proyecto-arcana
 Práctica de HTML y CSS.
-Commit 1: Estructura y algunos fondos de la página. 
+---
+GitHub page: https://svillav.github.io/proyecto-arcana/
