@@ -1,0 +1,6 @@
+main img {
+    position: relative;
+    width: 100%;
+    top: 40px;
+    filter: hue-rotate(180deg);
+}
